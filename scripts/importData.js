@@ -5,7 +5,7 @@ const electricData = JSON.parse(
   fs.readFileSync("scripts/data/electricData.json", "utf8")
 );
 const energyData = JSON.parse(
-  fs.readFileSync("scripts/data/energycData.json", "utf8")
+  fs.readFileSync("scripts/data/energyData.json", "utf8")
 );
 const connection = mysql.createConnection({
   host: "127.0.0.1",
@@ -27,5 +27,17 @@ electricData.forEach((item) => {
       console.log(`Inserted: ${results.insertId}`);
     }
   );
+});
+energyData.forEach((item) => {
+  const { id, color, data } = item;
+  data.forEach((dataItem) => {
+    const { x, y } = dataItem;
+    const query = `INSERT INTO energyData (category, color, month, consumption) VALUES (?, ?, ?, ?)`;
+    connection.query(query, [id, color, x, y], (error, results, fields) => {
+      console.log(color);
+      if (error) throw error;
+      console.log(`EnergyData Inserted: ${results.insertId}`);
+    });
+  });
 });
 connection.end();

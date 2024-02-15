@@ -28,6 +28,20 @@ app.get("/electricData", (req, res) => {
   });
 });
 
+app.get("/energyData", (req, res) => {
+  connection.query("SELECT * FROM energyData", (err, results) => {
+    if (err) throw err;
+    const formattedResults = results.map(
+      ({ id, month, consumption, color }) => ({
+        id,
+        data: [{ x: month, y: consumption }],
+        color,
+      })
+    );
+    res.json(formattedResults);
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
