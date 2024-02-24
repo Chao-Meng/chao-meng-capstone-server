@@ -1,0 +1,26 @@
+[
+  {
+    "Q": "Why is energy consumption peaking during certain months?",
+    "A": "Peaks in energy consumption can occur due to seasonal changes, which often impact heating and cooling needs. It's also possible that increased operational activity during certain periods could lead to higher energy use. Implementing energy-saving practices and regular equipment maintenance can help manage and reduce consumption during peak times."
+  },
+  {
+    "Q": "What should I do if I notice an unusual spike in electricity usage?",
+    "A": "First, review your energy logs to confirm the spike and compare it with historical data. If the increase is significant and without a clear reason, inspect your electrical equipment for faults or inefficiencies. It may also be helpful to conduct an energy audit to identify any underlying issues."
+  },
+  {
+    "Q": "How can I reduce my building's energy consumption?",
+    "A": "Consider adopting energy-efficient appliances, LED lighting, smart thermostats, and optimizing HVAC systems. Implementing an energy management system can also provide insights into usage patterns and identify areas for improvement."
+  },
+  {
+    "Q": "What does a temperature alarm indicate?",
+    "A": "A temperature alarm typically signifies that the environmental conditions have exceeded predetermined thresholds. This could be due to HVAC malfunctions, external weather conditions, or system errors. It's important to investigate the cause and address any equipment issues to maintain optimal conditions."
+  },
+  {
+    "Q": "How often should the electrical systems be inspected?",
+    "A": "Electrical systems should be inspected annually by a qualified professional to ensure they are in good working order and comply with safety regulations. However, if any signs of wear, damage, or performance issues are noticed, an immediate inspection is advised."
+  },
+  {
+    "Q": "What actions should be taken if the temperature is consistently too high or too low?",
+    "A": "Persistent temperature issues require a thorough inspection of your HVAC system. Filters may need to be replaced, ducts cleaned, or thermostats recalibrated. If problems persist, consult a HVAC specialist to diagnose and resolve the issue."
+  }
+]
